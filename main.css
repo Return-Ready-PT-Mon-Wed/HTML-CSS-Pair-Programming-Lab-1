@@ -1,0 +1,106 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px minmax(200px, 1fr) 100px; 
+    grid-auto-rows: minmax(150px, auto);
+    /* gap: 10px; */
+    grid-template-areas: 
+       "header" 
+       "nav" 
+       "main"
+       "aside"
+       "footer";
+ }
+
+ 
+ header {
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+ }
+ 
+ main {
+    grid-area: main;
+    background-color: aliceblue;
+    padding-top: 20px;
+ }
+ 
+ aside {
+    grid-area: aside;
+    
+ }
+ 
+ nav {
+    grid-area: nav;
+    
+ }
+
+ aside, nav {
+   background-color: lightgray;
+   padding: 20px;
+ }
+ 
+ footer {
+    grid-area: footer;
+    background-color: rgb(3, 3, 3);
+    color: white;
+
+ }
+
+ footer p {
+    text-align: center;
+ }
+
+ 
+ h1 {
+    color: orange;
+    padding: 0 20px;
+    font-size: 3em;
+ }
+
+ img {
+
+    float: left;
+    max-width: 30%;
+    height: auto;
+    margin: 0 20px ;
+ }
+
+ a {
+    color: orange;
+    text-decoration: none;
+ }
+
+ #readmore {
+    font-weight: bold;
+ }
+
+ ul {
+   list-style-type: none;
+ }
+
+ hr {
+   background-color: grey;
+   border: solid 1px grey;
+ }
+
+ li {
+   margin: 8px 0;
+ }
+
+
+ 
+  .container {
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: minmax(50px, auto) minmax(150px, auto) minmax(150px, auto) minmax(40px, auto);
+       grid-template-areas: 
+       "header header header" 
+       "main main nav"
+       "main main aside" 
+       "footer footer footer";
+    }
+ 
