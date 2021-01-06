@@ -1,0 +1,68 @@
+
+    h1 {
+        background: darkgray;
+        left: 0%;
+        top: 0%;
+        font-size: 5000;
+        font-family: Arial;
+        padding: 50px;
+        margin-top: 1px;
+        
+    }
+
+    h2 {
+        padding: 50px;
+
+    }
+
+    /* h3 {
+        float: left;
+    } */
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: darkgray;
+        color: white;
+        text-align: center; 
+    }
+
+    ul {
+        color: orange;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .mainbody{
+        width:75%;
+        float: left;
+    }
+
+    .image{
+        float: left;
+        margin-right: 7.5%;
+    }
+
+    .blog{
+        align-self: auto;
+        height: 100%;
+    }
+
+    .sidebar{
+        width:20%;
+        height: 100%;
+        float: right;
+        background-color: gray;
+    }
+
+    /*see if you can get the viewport height and set the sidebar height to viewport height*/
+
+    
+
+
+
+
